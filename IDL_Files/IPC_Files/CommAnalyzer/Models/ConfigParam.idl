@@ -1,0 +1,218 @@
+
+#include "TestItem.idl"
+
+namespace TestWorkModels
+{
+    class CCallConfig : CTestItem
+    {
+        Boolean mIsCalling;
+        Int32 mTestCount;
+        String mPhoneNumber;
+        Int64 mCallingTime;
+        Int64 mIntervalTime;
+        Int64 mConnectedTime;
+        Int64 mCalledTimeout;
+        Boolean mIsConnectedAlways;
+        Boolean mIsMos;
+    }
+    
+    class CFtpDownloadConfig : CTestItem
+    {
+        Int32 mDownloadMode;
+        String mFtpIp;
+        String mFtpUser;
+        String mFtpPwd;
+        String mRemotePath;
+        Int32 mTestCount;
+        Int32 mDownloadTime;
+        Int32 mTimeOut;
+        Int32 mIntervalTime;
+        Int32 mThreadCount;
+        Int32 mPppType;
+        Int32 mWorkMode;
+        Int32 mSaveOption;
+    }
+    
+    class CFtpUploadConfig : CTestItem
+    {
+        Int32 mUploadMode;
+        String mFtpIp;
+        String mFtpUser;
+        String mFtpPwd;
+        String mRemotePath;
+        String mFilePath;
+        Int32 mTestCount;
+        Int32 mFileLength;
+        Int32 mUploadTime;
+        Int32 mTimeOut;
+        Int32 mIntervalTime;
+        Int32 mThreadCount;
+        Int32 mPppType;
+        Int32 mWorkMode;
+    }
+    
+    class CHttpDownloadConfig : CTestItem
+    {
+        Int32 mTestCount;
+        String mDownloadUrl;
+        Int32 mTimeOut;
+        Int32 mIntervalTime;
+        Int32 mThreadCount;
+        Int32 mDownloadMode;
+        Int32 mLowSpeedTimeOut;
+        Int32 mPppType;
+    }
+    
+    class CHttpPageConfig : CTestItem
+    {
+        Int32 mTestCount;
+        String mPageUrl;
+        Int32 mTimeOut;
+        Int32 mIntervalTime;
+        Int32 mPppType;
+        Int32 mTestMode;
+        Int32 mLowSpeedTimeOut;
+        Boolean mIsLoadImage;
+        Boolean mIsCleanCache;
+    }
+    
+    class CHttpUploadConfig : CTestItem
+    {
+        Int32 mTestCount;
+        String mUploadUrl;
+        String mFilePath;
+        Int32 mFileLength;
+        Int32 mUploadTime;
+        Int32 mIntervalTime;
+        Int32 mLowSpeedTimeOut;
+        Int32 mUploadMode;
+        Int32 mPppType;
+    }
+    
+    class CIdleConfig : CTestItem
+    {
+        Int64 mTestTime;
+    }
+    
+    class CPingConfig : CTestItem
+    {
+        Int32 mTestCount;
+        String mIPAddress;
+        Int32 mPackageSize;
+        Int32 mIntervalTime;
+        Int32 mTimeOut;
+        Int32 mTTL;
+        Int32 mPppType;
+    }
+    
+    class CReceiveEmailConfig : CTestItem
+    {
+        Int32 mTestCount;
+        String mPop3Addr;
+        String mMailAddr;
+        String mPassword;
+        Int32 mPop3Port;
+        Int32 mServerType;
+        Int32 mTimeOut;
+        Int32 mIntervalTime;
+        Int32 mPppType;
+        Int32 mEncryMode;
+        Int32 mLowSpeedTimeout;
+    }
+    
+    class CSendEmailConfig : CTestItem
+    {
+        Int32 mTestCount;
+        String mSmtpAddr;
+        String mMailAddr;
+        String mPassword;
+        String mReceiveMailAddr;
+        String mMailSubject;
+        String mMailBody;
+        Int32 mSmtpPort;
+        Int32 mEncryMode;
+        Int32 mTimeOut;
+        Int32 mIntervalTime;
+        Int32 mLowSpeedTimeout;
+        Int32 mPppType;
+        String mAttachment;
+    }
+    
+    class CSmsReceiveConfig : CTestItem
+    {
+        Int32 mReceiveCount;
+        Int32 mTimeOut;
+        Int32 mIntervalTime;
+    }
+    
+    class CSmsSendConfig : CTestItem
+    {
+        Int32 mSendCount;
+        String mCenterNumber;
+        String mReceiveNumber;
+        String mContent;
+        Int32 mIntervalTime;
+        Int32 mTimeOut;
+    }
+    
+    class CTraceRouteConfig : CTestItem
+    {
+        Int32 mTestCount;
+        String mTraceHost;
+        Int32 mPackageSize;
+        Int32 mIntervalTime;
+        Int32 mHopTimeOut;
+        Int32 mHopIntervalTime;
+        Int32 mHopDetectTime;
+        Int32 mPppType;
+    }
+    
+    class CVideoStreamingConfig : CTestItem
+    {
+        Int32 mTestCount;
+        String mVideoUrl;
+        Int32 mPlayTime;
+        Int32 mTimeOut;
+        Int32 mIntervalTime;
+        Int32 mPppType;
+    }
+    
+    class CWAPDownloadConfig : CTestItem
+    {
+        Int32 mTestCount;
+        String mUrl;
+        Int32 mTimeOut;
+        Int32 mIntervalTime;
+        Int32 mWAPProtocol;
+        Boolean mIsUseGateway;
+        String mProxy;
+        Int32 mPort;
+        Int32 mPppType;
+        Int32 mThreadCount;
+    }
+    
+    class CWAPPageConfig : CTestItem
+    {
+        Int32 mTestCount;
+        Int32 mTestMode;
+        String mPageUrl;
+        Int32 mTimeOut;
+        Int32 mWAPProtocol;
+        Int32 mIntervalTime;
+        Boolean mIsLoadImage;
+        Boolean mIsCleanCookie;
+        Boolean mIsUseGateway;
+        String mProxy;
+        Int32 mPort;
+        Int32 mPppType;
+    }
+
+    class CParallelTaskConfig : CTestItem
+    {
+        Int32 mTestCount;
+        Int32 mIntervalTime;
+        Int32 mVoiceDelay;
+        Int32 mPppType;
+        List<CTestItem> mTaskItems;
+    }
+}

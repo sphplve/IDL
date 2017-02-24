@@ -1,0 +1,13 @@
+﻿
+namespace Models
+{
+    class CRadioMeasParam
+    {
+        String mType;
+        UInt64 mTimeStamp;
+        UInt32 mFrameId;
+        UInt8 mDeviceId;        
+        Double? mLatitude;
+        Double? mLongitude;
+    }
+}

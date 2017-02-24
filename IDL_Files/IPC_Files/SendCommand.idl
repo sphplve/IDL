@@ -1,0 +1,7 @@
+namespace IPC
+{
+    singleton interface CSendCommand
+    {
+        Boolean SendCommand(String command, String params);
+    }
+}

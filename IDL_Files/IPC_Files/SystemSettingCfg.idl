@@ -1,0 +1,21 @@
+
+namespace IPC
+{
+    class ParamFrequency
+    {
+        String mName;
+        Int32 mValue;
+    }
+    
+    singleton interface CSystemSettingCfg
+    {
+        List<ParamFrequency> GetParamsFrequency();
+        Boolean GetFrequencyEnabled();
+        Boolean GetTCPDumpEnabled();
+        Boolean GetIsAutoUpload();
+        String GetIp();
+        String GetUserName();
+        String GetPassword();
+        String GetRemotePath();
+    }
+}

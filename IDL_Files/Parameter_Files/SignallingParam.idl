@@ -1,0 +1,17 @@
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+	class CSignallingParam : CRadioMeasParam
+	{
+	    Int32? mParserType;
+        Boolean mIsMarking;
+	    String mStatus;
+	    String mName;
+	    UInt32? mSignallingType;
+        UInt8 mFilterType;
+	    ByteArray mMessage;
+	}
+}

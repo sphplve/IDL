@@ -1,0 +1,17 @@
+
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+	class CEventParam : CRadioMeasParam
+	{
+        Boolean mIsMarking;
+	    UInt16? mLength;
+	    UInt16? mEventId;
+	    String mEventName;
+	    UInt8? mData;
+	}
+}
+

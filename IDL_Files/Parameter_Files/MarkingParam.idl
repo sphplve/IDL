@@ -1,0 +1,10 @@
+
+namespace Models
+{
+    class CMarkingParam
+    {
+        UInt8 mType;
+        String mName;
+        UInt64 mTimeStamp;
+    }
+}

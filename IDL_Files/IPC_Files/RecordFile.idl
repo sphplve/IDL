@@ -1,0 +1,13 @@
+namespace IPC
+{
+    singleton interface CRecordFile
+    {
+        Int32 CreateFile(String path);
+        Int32 Open(String path);
+        Void WriteToFile(ByteArray ba);
+        ByteArray ReadFromFile();
+        Void SetWriteToFile(Boolean isWriteToFile);
+        Boolean IsWriteToFile();        
+        Void Close();
+    }
+}

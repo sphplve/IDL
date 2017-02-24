@@ -1,0 +1,21 @@
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+	class CTraceParam : CRadioMeasParam
+	{
+	    UInt16? mGid;
+	    UInt16? mIndex;
+	    UInt16? mPacketSize;
+	    UInt16? mTtl;
+	    UInt64? mDelay;
+	    UInt16? mStatisticsTtl;
+	    UInt64? mStatisticsDelay;
+	    UInt16? mSuccessCount;
+	    UInt16? mFailCount;
+	    UInt16? mCount;
+	    String mAddress;
+	}
+}

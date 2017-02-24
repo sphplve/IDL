@@ -1,0 +1,13 @@
+
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+    class CCQTMap : CRadioMeasParam
+    {
+        // 0：打点 1：清除 2：撤销 3：重新打点
+        UInt8 mAction; 
+    }
+}

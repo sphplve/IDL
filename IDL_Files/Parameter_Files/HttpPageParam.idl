@@ -1,0 +1,21 @@
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+    class CHttpPageParam : CRadioMeasParam
+    {    
+        Boolean? mIsSuccess;
+        Boolean? mIsRefreshSuccess;
+        UInt16? mIndex;
+        UInt16? mSuccessCount;
+        UInt16? mFailCount;
+        UInt16? mCount;
+        UInt16? mRefreshSuccessCount;
+        UInt16? mRefreshFailCount;
+        UInt16? mRefreshCount;
+        UInt64? mDelay;
+        UInt64? mRefreshDelay;
+    }
+}

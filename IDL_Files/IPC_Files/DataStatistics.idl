@@ -1,0 +1,25 @@
+
+#include "Models/RadioMeasParam.idl"
+
+namespace IPC
+{
+    singleton interface DataStatistics
+    {
+        Void ClearData();
+        Void Reset();
+        Void DataStatisticsForLogging(Models.CRadioMeasParam radio);
+        Void DataStatisticsForTimeAndDistance(Double latitude, Double longitude);
+        Void DataStatisticsForMarking(Boolean marking);
+        Void DataStatisticsForGSMRxLevFull(Int32 rxLevFull);
+        
+        Void DataStatisticsForGSMRxLevSub(Int32 rxLevSub);
+        Void DataStatisticsForGSMRxQualFull(Int32 rxQual);
+        Void DataStatisticsForGSMRxQualSub(Int32 rxQual);
+        Void DataStatisticsForGSMTxPower(Int32 txPower);
+        Void DataStatisticsForGSMTA(Int32 ta);
+        Void DataStatisticsForGSMVCodec(String vCodec);
+        Void DataStatisticsForLTERSRP(Double RSRP);
+        Void DataStatisticsForLTERSRQ(Double RSRQ);
+        Void DataStatisticsForLTESINR(Double SINR);
+    }
+}

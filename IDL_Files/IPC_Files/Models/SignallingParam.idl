@@ -1,0 +1,8 @@
+
+namespace Models
+{
+	class CSignallingParam 
+	{
+
+	}
+}

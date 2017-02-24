@@ -1,0 +1,11 @@
+#include "TestB.idl"
+#include "test.idl"
+
+namespace TestA
+{
+    singleton interface A
+    {
+        Int32 Foo(Int32 a, NA.CList b);        
+        Void SetListener(TestB.B bb);        
+    }
+}

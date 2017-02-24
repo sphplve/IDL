@@ -1,0 +1,24 @@
+
+namespace IPC
+{
+    singleton interface DeviceManager
+    {
+        Int32 Initialize();
+        List<Int32?> GetAllDevices();
+        Int32 Open(Int32 deviceId);
+        Int32 Close(Int32 deviceId);
+        Int32 Establish(Int32 deviceId);
+        Int32 Stop(Int32 deviceId);
+        Int32 RatSelect(Int32 deviceId, Int32 ratType);
+        Int32 PsConnect(Int32 deviceId);
+        Int32 PsDisconnect(Int32 deviceId);
+        Int32 Answer(Int32 deviceId, String number);
+        Int32 Dial(Int32 deviceId, String number);
+        Int32 HangUp(Int32 deviceId, String number);
+        Int32 CallStateConnected(Int32 deviceId, String number);
+        Int32 CallStateDisConnected(Int32 deviceId, String number);        
+        Int32 PPPConnection(Int32 deviceId, String state);
+        Int32 SendMessage(Int32 deviceId, String params);
+        Int32 GetMessageState(Int32 deviceId);
+    }
+}

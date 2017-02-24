@@ -1,0 +1,15 @@
+
+#include "Business/Drivers/DeviceDataManager.idl"
+
+namespace IPC
+{
+    singleton interface DataSetManager
+    {
+        CDeviceDataManager.CDeviceDataSet GetDataSet();
+        Void SetMapTable(List<String> keyList);
+        Void CleanAllData();
+        Void CleanEventParamList();
+        Void CleanSignallingParamList();
+        Void CleanMapParamTable(String key);
+    }
+}

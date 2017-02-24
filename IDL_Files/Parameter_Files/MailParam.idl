@@ -1,0 +1,20 @@
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+	class CMailParam : CRadioMeasParam
+	{
+	    Boolean? mIsSuccess;
+
+            // 1 send 2 receive
+	    UInt16? mMode;
+	    UInt16? mIndex;
+	    UInt64? mDelay;
+	    UInt16? mSuccessCount;
+	    UInt16? mFailCount;
+	    UInt16? mCount;
+	    String mMailAddress;
+	}
+}

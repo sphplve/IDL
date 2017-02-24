@@ -1,0 +1,14 @@
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+	class CFtpParam : CRadioMeasParam
+	{
+	    Double? mSpeedAvg;	    
+	    // 1 up 2 down
+	    UInt16? mMode;
+	    UInt16? mUsers;
+	}
+}

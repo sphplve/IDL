@@ -1,0 +1,10 @@
+namespace IPC
+{
+    singleton interface CDTLogFile
+    {
+        Int32 Initialize(String path);
+        Int32 Open(String path);
+        Void Close();
+        Void WriteToFile(String content);
+    }
+}

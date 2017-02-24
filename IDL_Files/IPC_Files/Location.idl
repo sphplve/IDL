@@ -1,0 +1,8 @@
+
+namespace IPC
+{
+    singleton interface CLocation
+    {
+        Void GetLocation(Double latitude, Double longitude);
+    }
+}

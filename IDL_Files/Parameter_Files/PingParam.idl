@@ -1,0 +1,18 @@
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+	class CPingParam : CRadioMeasParam
+	{
+	    UInt16? mIndex;
+	    UInt16? mPacketSize;
+	    UInt16? mTtl;
+	    UInt64? mDelay;
+	    UInt16? mSuccessCount;
+	    UInt16? mFailCount;
+	    UInt16? mCount;
+	    String mAddress;
+	}
+}

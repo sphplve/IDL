@@ -1,0 +1,15 @@
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+    class CHttpParam : CRadioMeasParam
+    {
+        UInt16? mSuccessCount;
+        UInt16? mCount;
+        Double? mSpeedAvg;
+        // 1 up 2 down
+        UInt16? mMode;  
+    }
+}

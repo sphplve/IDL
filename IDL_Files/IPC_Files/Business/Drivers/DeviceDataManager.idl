@@ -1,0 +1,14 @@
+#include "Models/SignallingParam.idl"
+#include "Models/EventParam.idl"
+
+namespace IPC
+{
+    class CDeviceDataManager
+    {
+        class CDeviceDataSet
+        {
+            List<Models.CEventParam> mEventParamList;
+            List<Models.CSignallingParam> mSignallingParamList;
+        }
+    }
+}

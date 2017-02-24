@@ -1,0 +1,13 @@
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+    class CWapDownloadParam : CRadioMeasParam
+    {
+        UInt16? mSuccessCount;
+        UInt16? mCount;
+        Double? mSpeedAvg;
+    }
+}

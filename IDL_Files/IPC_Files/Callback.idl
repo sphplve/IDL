@@ -1,0 +1,12 @@
+
+#include "CommAnalyzer/Models/TestRecord.idl"
+
+namespace IPC
+{
+    interface Callback
+    {
+        Void OnTestFinished(String result);
+        Void OnReply(Int32 workerId, CTestRecord record);
+        Void OnUploadReply();
+    }
+}

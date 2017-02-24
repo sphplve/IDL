@@ -1,0 +1,7 @@
+namespace IPC
+{
+    singleton interface AirServer
+    {
+        String GetIMEI();
+    }
+}

@@ -1,0 +1,733 @@
+
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+    class CGSMNCInfo
+    {
+        UInt16? mBCCH;
+        UInt16? mBSIC;
+        Int8? mRxLev;
+        Int32? mC1;
+        Int32? mC2;
+        Int32? mC31;
+        Int32? mC32;
+    }
+    
+    class CGSMNeighborCellInfos : CRadioMeasParam
+    {
+        List<CGSMNCInfo> mNeighborCellInfos;
+    }
+    
+    class CGSMARFCN : CRadioMeasParam
+    {
+        UInt16? mARFCN;
+    }
+    
+    class CGSMARFCNs : CRadioMeasParam
+    {
+        List<CGSMARFCN> mARFCNs;
+    }
+    
+    class CGSMBCCH_CI : CRadioMeasParam
+    {
+        Double? mBCCH_CI;
+    }
+    
+    class CGSMTCH_CI : CRadioMeasParam
+    {
+        Double? mTCH_CI;
+    }
+    
+    class CGSMUL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mUL_RLC_Throughput;
+    }
+    
+    class CGSMDL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mDL_RLC_Throughput;
+    }
+    
+    class CGSMUL_RLC_RTX : CRadioMeasParam
+    {
+        Double? mUL_RLC_RTX;
+    }
+    
+    class CGSMDL_RLC_RTX : CRadioMeasParam
+    {
+        Double? mDL_RLC_RTX;
+    }
+    
+    class CGSMGPRS_BLER : CRadioMeasParam
+    {
+        Double? mGPRS_BLER;
+    }
+    
+    class CGSMGPRS_ReTx_Ratio : CRadioMeasParam
+    {
+        Double? mGPRS_ReTx_Ratio;
+    }
+    
+    class CGSMFERFull : CRadioMeasParam
+    {
+        Double? mFERFull;
+    }
+    
+    class CGSMFERSub : CRadioMeasParam
+    {
+        Double? mFERSub;
+    }
+    
+    class CGSMDSCCurrent : CRadioMeasParam
+    {
+        UInt32? mDSCCurrent;
+    }
+    
+    class CGSMDTX : CRadioMeasParam
+    {
+        UInt8? mDTX;
+    }
+    
+    class CGSMBCCH : CRadioMeasParam
+    {
+        UInt16? mBCCH;
+    }
+    
+    class CGSMBCCHLevel : CRadioMeasParam
+    {
+        Int16? mBCCHLevel;
+    }
+    
+    class CGSMBSIC : CRadioMeasParam
+    {
+        UInt16? mBSIC;
+    }
+    
+    class CGSMEGPRSSupport : CRadioMeasParam
+    {
+        UInt8? mEGPRSSupport;
+    }
+    
+    class CGSMRxLevFull : CRadioMeasParam
+    {
+        Int16? mRxLevFull;
+    }
+    
+    class CGSMRxLevSub : CRadioMeasParam
+    {
+        Int16? mRxLevSub;
+    }
+    
+    class CGSMRxQualFull : CRadioMeasParam
+    {
+        Int16? mRxQualFull;
+    }
+    
+    class CGSMRxQualSub : CRadioMeasParam
+    {
+        Int16? mRxQualSub;
+    }
+    
+    class CGSMMaxRxLevel : CRadioMeasParam
+    {
+        Double? mMaxRxLevel;
+    }
+    
+    class CGSMTA : CRadioMeasParam
+    {
+        UInt16? mTA;
+    }
+    
+    class CGSMTxPower : CRadioMeasParam
+    {
+        UInt16? mTxPower;
+    }
+    
+    class CGSMRxLevelAccessMin : CRadioMeasParam
+    {
+        UInt8? mRxLevelAccessMin;
+    }
+    
+    class CGSMC1 : CRadioMeasParam
+    {
+        Int32? mC1;
+    }
+    
+    class CGSMC2 : CRadioMeasParam
+    {
+        Int32? mC2;
+    }
+    
+    class CGSMC31 : CRadioMeasParam
+    {
+        Int32? mC31;
+    }
+    
+    class CGSMC32 : CRadioMeasParam
+    {
+        Int32? mC32;
+    }
+    
+    class CGSMMsTxPowerMaxCCH : CRadioMeasParam
+    {
+        UInt8? mMsTxPowerMaxCCH;
+    }
+    
+    class CGSMCRHyst : CRadioMeasParam
+    {
+        UInt8? mCRHyst;
+    }
+    
+    class CGSMCROffset : CRadioMeasParam
+    {
+        UInt8? mCROffset;
+    }
+    
+    class CGSMPenaltyTime : CRadioMeasParam
+    {
+        UInt8? mPenaltyTime;
+    }
+    
+    class CGSMTempOffset : CRadioMeasParam
+    {
+        UInt8? mTempOffset;
+    }
+    
+    class CGSMCellId : CRadioMeasParam
+    {
+        UInt16? mCellId;
+    }
+    
+    class CGSMLAC : CRadioMeasParam
+    {
+        UInt16? mLAC;
+    }
+    
+    class CGSMTCH_State : CRadioMeasParam
+    {
+        UInt8? mTCH_State;
+    }
+    
+    class CGSMRLTMaximum : CRadioMeasParam
+    {
+        UInt8? mRLTMaximum;
+    }
+    
+    class CGSMEDGESupport : CRadioMeasParam
+    {
+        UInt8? mEDGESupport;
+    }
+    
+    class CGSMBand : CRadioMeasParam
+    {
+        UInt16? mBand;
+    }
+    
+    class CGSMCellSelectionPriority : CRadioMeasParam
+    {
+        UInt8? mCellSelectionPriority;
+    }
+    
+    class CGSMIsHopping : CRadioMeasParam
+    {
+        UInt8? mIsHopping;
+    }
+    
+    class CGSMHoppingIndicator : CRadioMeasParam
+    {
+        UInt8? mHoppingIndicator;
+    }
+    
+    class CGSMATTIMSI : CRadioMeasParam
+    {
+        UInt8? mATTIMSI;
+    }
+    
+    class CGSMCCCH_SDCCH_COMB : CRadioMeasParam
+    {
+        UInt8? mCCCH_SDCCH_COMB;
+    }
+    
+    class CGSMAGBLK : CRadioMeasParam
+    {
+        UInt8? mAGBLK;
+    }
+    
+    class CGSMMFRMS : CRadioMeasParam
+    {
+        UInt8? mMFRMS;
+    }
+    
+    class CGSMMAXRET : CRadioMeasParam
+    {
+        UInt8? mMAXRET;
+    }
+    
+    class CGSMCell_Barred : CRadioMeasParam
+    {
+        UInt8? mCell_Barred;
+    }
+    
+    class CGSMCCH_CONF : CRadioMeasParam
+    {
+        UInt8? mCCH_CONF;
+    }
+    
+    class CGSMCCCH_Channel_Count : CRadioMeasParam
+    {
+        UInt8? mCCCH_Channel_Count;
+    }
+    
+    class CGSMTimeslot : CRadioMeasParam
+    {
+        UInt8? mTimeslot;
+    }
+    
+    class CGSMRetransmission_Counter : CRadioMeasParam
+    {
+        String mRetransmission_Counter;
+    }
+    
+    class CGSMMax_Retransmission : CRadioMeasParam
+    {
+        UInt8? mMax_Retransmission;
+    }
+    
+    class CGSMChannel_type : CRadioMeasParam
+    {
+        String mChannel_type;
+    }
+    
+    class CGSMChannel_mode : CRadioMeasParam
+    {
+        UInt8? mChannel_mode;
+    }
+    
+    class CGSMTSC : CRadioMeasParam
+    {
+        UInt8? mTSC;
+    }
+    
+    class CGSMSubchannel_number : CRadioMeasParam
+    {
+        UInt8? mSubchannel_number;
+    }
+    
+    class CGSMChannel_number : CRadioMeasParam
+    {
+        UInt16? mChannel_number;
+    }
+    
+    class CGSMHoppingType : CRadioMeasParam
+    {
+        UInt8? mHoppingType;
+    }
+    
+    class CGSMMAIO : CRadioMeasParam
+    {
+        UInt8? mMAIO;
+    }
+    
+    class CGSMHSN : CRadioMeasParam
+    {
+        UInt8? mHSN;
+    }
+    
+    class CGSMMCC : CRadioMeasParam
+    {
+        UInt16? mMCC;
+    }
+    
+    class CGSMMNC : CRadioMeasParam
+    {
+        UInt16? mMNC;
+    }
+    
+    class CGSMMNC_Length : CRadioMeasParam
+    {
+        UInt8? mMNC_Length;
+    }
+    
+    class CGSMTMSI : CRadioMeasParam
+    {
+        Int32? mTMSI;
+    }
+    
+    class CGSMT3212 : CRadioMeasParam
+    {
+        UInt8? mT3212;
+    }
+    
+    class CGSMCiphering_algorithm : CRadioMeasParam
+    {
+        String mCiphering_algorithm;
+    }
+    
+    class CGSMCS_UL : CRadioMeasParam
+    {
+        UInt8? mCS_UL;
+    }
+    
+    class CGSMMSMultislotClass : CRadioMeasParam
+    {
+        UInt8? mMSMultislotClass;
+    }
+    
+    class CGSMTS_Number_UL : CRadioMeasParam
+    {
+        UInt8? mTS_Number_UL;
+    }
+    
+    class CGSMTS_Number_DL : CRadioMeasParam
+    {
+        UInt8? mTS_Number_DL;
+    }
+    
+    class CGSMUL_TS0 : CRadioMeasParam
+    {
+        UInt8? mUL_TS0;
+    }
+    
+    class CGSMUL_TS1 : CRadioMeasParam
+    {
+        UInt8? mUL_TS1;
+    }
+    
+    class CGSMUL_TS2 : CRadioMeasParam
+    {
+        UInt8? mUL_TS2;
+    }
+    
+    class CGSMUL_TS3 : CRadioMeasParam
+    {
+        UInt8? mUL_TS3;
+    }
+    
+    class CGSMUL_TS4 : CRadioMeasParam
+    {
+        UInt8? mUL_TS4;
+    }
+    
+    class CGSMUL_TS5 : CRadioMeasParam
+    {
+        UInt8? mUL_TS5;
+    }
+    
+    class CGSMUL_TS6 : CRadioMeasParam
+    {
+        UInt8? mUL_TS6;
+    }
+    
+    class CGSMUL_TS7 : CRadioMeasParam
+    {
+        UInt8? mUL_TS7;
+    }
+    
+    class CGSMDL_TS0 : CRadioMeasParam
+    {
+        UInt8? mDL_TS0;
+    }
+    
+    class CGSMDL_TS1 : CRadioMeasParam
+    {
+        UInt8? mDL_TS1;
+    }
+    
+    class CGSMDL_TS2 : CRadioMeasParam
+    {
+        UInt8? mDL_TS2;
+    }
+    
+    class CGSMDL_TS3 : CRadioMeasParam
+    {
+        UInt8? mDL_TS3;
+    }
+    
+    class CGSMDL_TS4 : CRadioMeasParam
+    {
+        UInt8? mDL_TS4;
+    }
+    
+    class CGSMDL_TS5 : CRadioMeasParam
+    {
+        UInt8? mDL_TS5;
+    }
+    
+    class CGSMDL_TS6 : CRadioMeasParam
+    {
+        UInt8? mDL_TS6;
+    }
+    
+    class CGSMDL_TS7 : CRadioMeasParam
+    {
+        UInt8? mDL_TS7;
+    }
+    
+    class CGSMCValue : CRadioMeasParam
+    {
+        Int16? mCValue;
+    }
+    
+    class CGSMSignVar : CRadioMeasParam
+    {
+        UInt8? mSignVar;
+    }
+    
+    class CGSMPC_Meas_Chan : CRadioMeasParam
+    {
+        String mPC_Meas_Chan;
+    }
+    
+    class CGSMControl_ACK_Type : CRadioMeasParam
+    {
+        String mControl_ACK_Type;
+    }
+    
+    class CGSMNetwork_control_order : CRadioMeasParam
+    {
+        UInt8? mNetwork_control_order;
+    }
+    
+    class CGSMAccess_burst_type : CRadioMeasParam
+    {
+        String mAccess_burst_type;
+    }
+    
+    class CGSMPriority_Access_THR : CRadioMeasParam
+    {
+        UInt8? mPriority_Access_THR;
+    }
+    
+    class CGSMGMSK_MEAN_BEP : CRadioMeasParam
+    {
+        UInt16? mGMSK_MEAN_BEP;
+    }
+    
+    class CGSM8PSK_MEAN_BEP : CRadioMeasParam
+    {
+        UInt16? m8PSK_MEAN_BEP;
+    }
+    
+    class CGSMGMSK_CV_BEP : CRadioMeasParam
+    {
+        UInt16? mGMSK_CV_BEP;
+    }
+    
+    class CGSM8PSK_CV_BEP : CRadioMeasParam
+    {
+        UInt16? m8PSK_CV_BEP;
+    }
+    
+    class CGSMModulationUL : CRadioMeasParam
+    {
+        UInt16? mModulationUL;
+    }
+    
+    class CGSMModulationDL : CRadioMeasParam
+    {
+        UInt16? mModulationDL;
+    }
+    
+    class CGSMEDGE_WinSize_DL : CRadioMeasParam
+    {
+        UInt32? mEDGE_WinSize_DL;
+    }
+    
+    class CGSMEDGE_WinSize_UL : CRadioMeasParam
+    {
+        UInt32? mEDGE_WinSize_UL;
+    }
+    
+    class CGSMUL_TFI : CRadioMeasParam
+    {
+        UInt16? mUL_TFI;
+    }
+    
+    class CGSMUL_TBF_State : CRadioMeasParam
+    {
+        Boolean? mUL_TBF_State;
+    }
+    
+    class CGSMDL_TFI : CRadioMeasParam
+    {
+        UInt16? mDL_TFI;
+    }
+    
+    class CGSMDL_TBF_State : CRadioMeasParam
+    {
+        Boolean? mDL_TBF_State;
+    }
+    
+    class CGSMUL_MCS : CRadioMeasParam
+    {
+        String mUL_MCS;
+    }
+    
+    class CGSMDL_MCS : CRadioMeasParam
+    {
+        String mDL_MCS;
+    }
+    
+    class CGSMRLC_Mode : CRadioMeasParam
+    {
+        String mRLC_Mode;
+    }
+    
+    class CGSMAttachState : CRadioMeasParam
+    {
+        UInt8? mAttachState;
+    }
+    
+    class CGSMNMO : CRadioMeasParam
+    {
+        UInt8? mNMO;
+    }
+    
+    class CGSMP_TMSI : CRadioMeasParam
+    {
+        UInt64? mP_TMSI;
+    }
+    
+    class CGSMNewTLLI : CRadioMeasParam
+    {
+        UInt32? mNewTLLI;
+    }
+    
+    class CGSMOldTLLI : CRadioMeasParam
+    {
+        UInt32? mOldTLLI;
+    }
+    
+    class CGSMRAC : CRadioMeasParam
+    {
+        UInt8? mRAC;
+    }
+    
+    class CGSMT3314 : CRadioMeasParam
+    {
+        UInt8? mT3314;
+    }
+    
+    class CGSMSMState : CRadioMeasParam
+    {
+        UInt8? mSMState;
+    }
+    
+    class CGSMNSAPI : CRadioMeasParam
+    {
+        UInt8? mNSAPI;
+    }
+    
+    class CGSMReliabilityClass : CRadioMeasParam
+    {
+        UInt8? mReliabilityClass;
+    }
+    
+    class CGSMPeak_Throughput : CRadioMeasParam
+    {
+        UInt8? mPeak_Throughput;
+    }
+    
+    class CGSMRadio_Priority : CRadioMeasParam
+    {
+        UInt8? mRadio_Priority;
+    }
+    
+    class CGSMSNDCP_data_compression : CRadioMeasParam
+    {
+        UInt8? mSNDCP_data_compression;
+    }
+    
+    class CGSMSNDCP_header_compression : CRadioMeasParam
+    {
+        UInt8? mSNDCP_header_compression;
+    }
+    
+    class CGSMTS0_DL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mTS0_DL_RLC_Throughput;
+    }
+    
+    class CGSMTS1_DL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mTS1_DL_RLC_Throughput;
+    }
+    
+    class CGSMTS2_DL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mTS2_DL_RLC_Throughput;
+    }
+    
+    class CGSMTS3_DL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mTS3_DL_RLC_Throughput;
+    }
+    
+    class CGSMTS4_DL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mTS4_DL_RLC_Throughput;
+    }
+    
+    class CGSMTS5_DL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mTS5_DL_RLC_Throughput;
+    }
+    
+    class CGSMTS6_DL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mTS6_DL_RLC_Throughput;
+    }
+    
+    class CGSMTS7_DL_RLC_Throughput : CRadioMeasParam
+    {
+        Double? mTS7_DL_RLC_Throughput;
+    }
+    
+    class CGSMIMEI : CRadioMeasParam
+    {
+        UInt64? mIMEI;
+    }
+    
+    class CGSMRR_State : CRadioMeasParam
+    {
+        UInt8? mRR_State;
+    }
+    
+    class CGSMWCDMANetworkType : CRadioMeasParam
+    {
+        UInt8? mWCDMANetworkType;
+    }
+    
+    class CGSMRR_Channel_Release_Cause : CRadioMeasParam
+    {
+        UInt8? mRR_Channel_Release_Cause;
+    }
+    
+    class CGSMNetworkType : CRadioMeasParam
+    {
+        UInt8? mNetworkType;
+    }
+    
+    class CGSMVCodec : CRadioMeasParam
+    {
+        String mVCodec;
+    }
+    
+    class CGSMRLT : CRadioMeasParam
+    {
+        UInt16? mRLT;
+    }
+    
+    class CGSMCellName : CRadioMeasParam
+    {
+        String mCellName;
+    }
+    
+    class CGSMRxQual : CRadioMeasParam
+    {
+        Int16? mRxQual;
+    }
+}

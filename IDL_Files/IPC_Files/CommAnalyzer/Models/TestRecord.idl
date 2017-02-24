@@ -1,0 +1,118 @@
+
+namespace TestWorkModels
+{
+    class CTestRecord
+    {
+        Int64 mTime;
+    }
+
+    class CFtpHttpGroupInfo
+    {
+        Int32 mGid;
+        String mUrl;
+        String mFileName;
+        Int64 mLength;
+        Int64 mCount;
+        Int64 mElapsedTime;
+        Int64 mRemainingTime;
+        Double mSpeedAvg;
+        Int32 mStatus;
+    }
+
+    class CFtpTestRecord : CTestRecord
+    {
+        Double mSpeedAvg;
+        Int32 mUsers;
+        List<CFtpHttpGroupInfo> mGroupInfos;
+    }
+
+    class CHttpTestRecord : CTestRecord
+    {
+        Double mSpeedAvg;
+        List<CFtpHttpGroupInfo> mGroupInfos;
+    }
+
+    class CMailTestRecord : CTestRecord
+    {
+        Int32 mIndex;          
+        String mMailAddress; 
+        Boolean mIsSuccess;        
+        Int64 mElapsed;        
+        Int32 mSuccessCount;   
+        Int32 mFailCount;     
+        Int32 mCount;        
+    }
+
+    class CPingTestRecord : CTestRecord
+    {
+        Int32 mIndex;
+        Int32 mPacketSize;
+        Int32 mTtl;
+        Int64 mDelay;
+        Int32 mSuccessCount;
+        Int32 mFailCount;
+        Int32 mCount;
+        String mAddress;
+    }
+    
+    class CTraceRouteTestRecord : CTestRecord
+    {
+        Int32 mGid;
+        Int32 mIndex;
+        Int32 mPacketSize;
+        String mAddress;
+        Int32 mTtl;
+        Int64 mDelay;
+        Int32 mStatisticsTtl;
+        Int64 mStatisticsDelay;
+        Int32 mSuccessCount;
+        Int32 mFailCount;
+        Int32 mCount;
+    }
+
+    class CVideoStreamTestRecord : CTestRecord
+    {
+        Int32 mIndex;
+        String mUrl;
+        Boolean mIsSuccess;
+        Int64 mElapsed;
+        Int32 mSuccessCount;
+        Int32 mFailCount;
+        Int32 mCount;
+    }
+
+    class CHttpPageTestRecord : CTestRecord
+    {
+        Int32 mIndex;
+        Int64 mLogonElapsed;
+        Int32 mLogonSuccessCount;
+        Int32 mLogonFailCount;
+        Int32 mLogonCount;
+        Int64 mRefreshElapsed;
+        Int32 mRefreshSuccessCount;
+        Int32 mRefreshFailCount;
+        Int32 mRefreshCount;
+        Boolean mLogonSuccess;
+        Boolean mRefreshSuccess;
+    }
+
+    class CWapPageTestRecord : CTestRecord
+    {
+        Int32 mIndex;
+        Int64 mLogonElapsed;
+        Int32 mLogonSuccessCount;
+        Int32 mLogonFailCount;
+        Int32 mLogonCount;
+        Int64 mRefreshElapsed;
+        Int32 mRefreshSuccessCount;
+        Int32 mRefreshFailCount;
+        Int32 mRefreshCount;
+        Boolean mLogonSuccess;
+        Boolean mRefreshSuccess;
+    }
+    
+    class CWapDownloadTestRecord : CTestRecord
+    {
+        Double mSpeedAvg;
+    }
+}

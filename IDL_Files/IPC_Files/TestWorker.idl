@@ -1,0 +1,18 @@
+
+#include "Callback.idl"
+#include "TaskTemplate.idl"
+
+
+namespace IPC
+{
+    singleton interface TestWorker
+    {
+        Int32 CreateTestFile(String filePath);
+        Int32 SetTestConfig(TestWorkModels.CTaskTemplate taskTemplate);
+        Int32 StartTesting(Int32 mode);
+        Int32 StopTesting();
+        Int32 SetTestCallBack(Callback callbackRef);
+        TestWorkModels.CTaskTemplate GetTestInfo();
+        Void SaveStopMarking();
+    }
+}

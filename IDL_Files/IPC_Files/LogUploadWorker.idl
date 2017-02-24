@@ -1,0 +1,12 @@
+
+#include "Callback.idl"
+
+namespace IPC
+{
+    interface CLogUploadWorker
+    {
+        Void SetFilePath(List<String> filePaths);
+        Void SetOnReplyHandler(Callback callbackRef);
+        Void Start();
+    }
+}

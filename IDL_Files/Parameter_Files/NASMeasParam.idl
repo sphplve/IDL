@@ -1,0 +1,98 @@
+
+
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+    class CNASTMSI : CRadioMeasParam
+    {
+        Int32? mTMSI;
+    }
+    
+    class CNASWCDMAServiceType : CRadioMeasParam
+    {
+        UInt8? mWCDMAServiceType;
+    }
+    
+    class CNASGMMState_G : CRadioMeasParam
+    {
+        UInt8? mGMMState_G;
+    }
+    
+    class CNASGMMState_W : CRadioMeasParam
+    {
+        UInt8? mGMMState_W;
+    }
+    
+    class CNASGMMSubstate : CRadioMeasParam
+    {
+        UInt8? mGMMSubstate;
+    }
+    
+    class CNASGMMUpdate : CRadioMeasParam
+    {
+        UInt8? mGMMUpdate;
+    }
+    
+    class CNASNMO : CRadioMeasParam
+    {
+        UInt8? mNMO;
+    }
+    
+    class CNASTrafficClass : CRadioMeasParam
+    {
+        UInt8? mTrafficClass;
+    }
+    
+    class CNASCM_Service_Request_Cause : CRadioMeasParam
+    {
+        UInt8? mCM_Service_Request_Cause;
+    }
+    
+    class CNASLocation_Updating_Request_Type : CRadioMeasParam
+    {
+        UInt8? mLocation_Updating_Request_Type;
+    }
+    
+    class CNASRouting_Area_Update_Request_Type : CRadioMeasParam
+    {
+        UInt8? mRouting_Area_Update_Request_Type;
+    }
+    
+    class CNASRouting_Area_Update_Reject_Cause : CRadioMeasParam
+    {
+        UInt8? mRouting_Area_Update_Reject_Cause;
+    }
+    
+    class CNASAttach_Request_Type : CRadioMeasParam
+    {
+        UInt8? mAttach_Request_Type;
+    }
+    
+    class CNASCC_Disconnect_Cause : CRadioMeasParam
+    {
+        UInt8? mCC_Disconnect_Cause;
+    }
+    
+    class CNASRandomNumberPart1 : CRadioMeasParam
+    {
+        Int32? mRandomNumberPart1;
+    }
+    
+    class CNASRandomNumberPart2 : CRadioMeasParam
+    {
+        Int32? mRandomNumberPart2;
+    }
+    
+    class CNASRandomNumberPart3 : CRadioMeasParam
+    {
+        Int32? mRandomNumberPart3;
+    }
+    
+    class CNASRandomNumberPart4 : CRadioMeasParam
+    {
+        Int32? mRandomNumberPart4;
+    }
+}

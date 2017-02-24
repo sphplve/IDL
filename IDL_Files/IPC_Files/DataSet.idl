@@ -1,0 +1,12 @@
+#include "Models/SignallingParam.idl"
+#include "Models/EventParam.idl"
+#include "AirServer.idl"
+
+namespace IPC
+{
+    class CDeviceDataSet
+    {
+        List<Models.CEventParam> mEventParamList;
+        List<Models.CSignallingParam> mSignallingParamList;
+    }
+}

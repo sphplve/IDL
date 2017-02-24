@@ -1,0 +1,18 @@
+
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+    class CMapPoint : CRadioMeasParam
+    {
+        UInt32? mCellId;
+        UInt8 mNetwork;
+        Double? mLatitude;
+        Double? mLongitude;
+        String mName;
+        String mValue;
+        String mNeighborCellInfo;
+    }
+}

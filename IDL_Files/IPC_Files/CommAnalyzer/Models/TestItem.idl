@@ -1,0 +1,10 @@
+
+namespace TestWorkModels
+{
+    class CTestItem
+    {
+        Int32 mItemIndex;
+        Boolean mIsShowButtons;
+        Boolean mIsDropDown;
+    }   
+}

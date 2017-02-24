@@ -1,0 +1,13 @@
+
+#include "TestItem.idl"
+
+namespace TestWorkModels
+{
+    class CTaskTemplate
+    {
+        String mTaskName;
+        Int32 mTaskType; 
+        Int32 mCycleCount;
+        List<CTestItem> mTaskItems;
+    }
+}

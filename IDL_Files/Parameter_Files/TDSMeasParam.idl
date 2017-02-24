@@ -1,0 +1,688 @@
+
+#include "RadioMeasParam.idl"
+
+using RadioMeasParam
+
+namespace Models
+{
+    class CTDSNCInfo
+    {
+        Int16? mCarrierRSSI;
+        UInt16? mPathloss;
+        Int16? mRSCP;
+        UInt16? mUARFCN;
+        Int16? mRn;
+        UInt16? mCPI;
+        UInt16? mNeighbourSetsCount;
+        UInt8 mMidID;
+    }
+    
+    class CTDSRbRate
+    {
+        UInt32? mRB_ID;
+        UInt32? mDL_RB_Thr;
+        UInt32? mUL_RB_Thr;
+    }
+    
+    class CTDSDL_DPCH_Ts_Info
+    {
+        UInt8? mTimeslot;
+        UInt8? mMidamble_Configuration;
+        UInt8? mMidamble_Shift;
+    }
+    
+    class CTDSPCCPCHPathloss : CRadioMeasParam
+    {
+        Double? mPCCPCHPathloss;
+    }
+    
+    class CTDSPCCPCH_RSCP : CRadioMeasParam
+    {
+        Double? mPCCPCH_RSCP;
+    }
+    
+    class CTDSPCCPCH_SIR : CRadioMeasParam
+    {
+        Double? mPCCPCH_SIR;
+    }
+    
+    class CTDSPCCPCH_ISCP : CRadioMeasParam
+    {
+        Double? mPCCPCH_ISCP;
+    }
+    
+    class CTDSUETxPower : CRadioMeasParam
+    {
+        Double? mUETxPower;
+    }
+    
+    class CTDSCarrierRSSI : CRadioMeasParam
+    {
+        Double? mCarrierRSSI;
+    }
+    
+    class CTDSPCCPCH_CI : CRadioMeasParam
+    {
+        Double? mPCCPCH_CI;
+    }
+    
+    class CTDSChannelWindows : CRadioMeasParam
+    {
+        UInt8? mChannelWindows;
+    }
+    
+    class CTDSSRxlev : CRadioMeasParam
+    {
+        Int32? mSRxlev;
+    }
+    
+    class CTDSDPCH_CI : CRadioMeasParam
+    {
+        Double? mDPCH_CI;
+    }
+    
+    class CTDSTA : CRadioMeasParam
+    {
+        Int16? mTA;
+    }
+    
+    class CTDSBLER : CRadioMeasParam
+    {
+        Double? mBLER;
+    }
+    
+    class CTDSDPCH_ISCP : CRadioMeasParam
+    {
+        Double? mDPCH_ISCP;
+    }
+    
+    class CTDSDPCH_RSCP : CRadioMeasParam
+    {
+        Double? mDPCH_RSCP;
+    }
+    
+    class CTDSTransmission_Channel_Count : CRadioMeasParam
+    {
+        UInt8? mTransmission_Channel_Count;
+    }
+    
+    class CTDSSyncID : CRadioMeasParam
+    {
+        UInt8? mSyncID;
+    }
+    
+    class CTDSBasicMidamble : CRadioMeasParam
+    {
+        UInt16? mBasicMidamble;
+    }
+    
+    class CTDSRS : CRadioMeasParam
+    {
+        Int32? mRS;
+    }
+    
+    class CTDSMaximumCellRSCP : CRadioMeasParam
+    {
+        Double? mMaximumCellRSCP;
+    }
+    
+    class CTDSSecondaryCellRSCP : CRadioMeasParam
+    {
+        Double? mSecondaryCellRSCP;
+    }
+    
+    class CTDSNeighborCellInfos : CRadioMeasParam
+    {
+        List<CTDSNCInfo> mNeighborCellInfos;
+    }
+    
+    class CTDSTS2_DPCH_ISCP : CRadioMeasParam
+    {
+        Double? mTS2_DPCH_ISCP;
+    }
+    
+    class CTDSTS2_DPCH_RSCP : CRadioMeasParam
+    {
+        Double? mTS2_DPCH_RSCP;
+    }
+    
+    class CTDSTS2_PDCH_CI : CRadioMeasParam
+    {
+        Double? mTS2_PDCH_CI;
+    }
+    
+    class CTDSTS3_DPCH_ISCP : CRadioMeasParam
+    {
+        Double? mTS3_DPCH_ISCP;
+    }
+    
+    class CTDSTS3_DPCH_RSCP : CRadioMeasParam
+    {
+        Double? mTS3_DPCH_RSCP;
+    }
+    
+    class CTDSTS3_PDCH_CI : CRadioMeasParam
+    {
+        Double? mTS3_PDCH_CI;
+    }
+    
+    class CTDSTS4_DPCH_ISCP : CRadioMeasParam
+    {
+        Double? mTS4_DPCH_ISCP;
+    }
+    
+    class CTDSTS4_DPCH_RSCP : CRadioMeasParam
+    {
+        Double? mTS4_DPCH_RSCP;
+    }
+    
+    class CTDSTS4_PDCH_CI : CRadioMeasParam
+    {
+        Double? mTS4_PDCH_CI;
+    }
+    
+    class CTDSTS5_DPCH_ISCP : CRadioMeasParam
+    {
+        Double? mTS5_DPCH_ISCP;
+    }
+    
+    class CTDSTS5_DPCH_RSCP : CRadioMeasParam
+    {
+        Double? mTS5_DPCH_RSCP;
+    }
+    
+    class CTDSTS5_PDCH_CI : CRadioMeasParam
+    {
+        Double? mTS5_PDCH_CI;
+    }
+    
+    class CTDSTS6_DPCH_ISCP : CRadioMeasParam
+    {
+        Double? mTS6_DPCH_ISCP;
+    }
+    
+    class CTDSTS6_DPCH_RSCP : CRadioMeasParam
+    {
+        Double? mTS6_DPCH_RSCP;
+    }
+    
+    class CTDSTS6_PDCH_CI : CRadioMeasParam
+    {
+        Double? mTS6_PDCH_CI;
+    }
+    
+    class CTDSTrannsmissionChannelAverageBler : CRadioMeasParam
+    {
+        Double? mTrannsmissionChannelAverageBler;
+    }
+    
+    class CTDSHS_PDSCH_AveragerCodeNumber : CRadioMeasParam
+    {
+        Double? mHS_PDSCH_AveragerCodeNumber;
+    }
+    
+    class CTDSTS2_PDCP_SIR : CRadioMeasParam
+    {
+        Double? mTS2_PDCP_SIR;
+    }
+    
+    class CTDSTS3_PDCP_SIR : CRadioMeasParam
+    {
+        Double? mTS3_PDCP_SIR;
+    }
+    
+    class CTDSTS4_PDCP_SIR : CRadioMeasParam
+    {
+        Double? mTS4_PDCP_SIR;
+    }
+    
+    class CTDSTS5_PDCP_SIR : CRadioMeasParam
+    {
+        Double? mTS5_PDCP_SIR;
+    }
+    
+    class CTDSTS6_PDCP_SIR : CRadioMeasParam
+    {
+        Double? mTS6_PDCP_SIR;
+    }
+    
+    class CTDSUuDPCHTimeslotCount : CRadioMeasParam
+    {
+        UInt16? mUuDPCHTimeslotCount;
+    }
+    
+    class CTDSUuTimeslotISCPCount : CRadioMeasParam
+    {
+        UInt16? mUuTimeslotISCPCount;
+    }
+    
+    class CTDSAttachAllowed : CRadioMeasParam
+    {
+        UInt8? mAttachAllowed;
+    }
+    
+    class CTDSCellBarred : CRadioMeasParam
+    {
+        UInt8? mCellBarred;
+    }
+    
+    class CTDSCPI : CRadioMeasParam
+    {
+        UInt16? mCPI;
+    }
+    
+    class CTDSCellID : CRadioMeasParam
+    {
+        Int32? mCellID;
+    }
+    
+    class CTDSCellID_Short : CRadioMeasParam
+    {
+        UInt16? mCellID_Short;
+    }
+    
+    class CTDSCoefficient : CRadioMeasParam
+    {
+        UInt32? mCoefficient;
+    }
+    
+    class CTDSInterSearch : CRadioMeasParam
+    {
+        Int8? mInterSearch;
+    }
+    
+    class CTDSIntraSearch : CRadioMeasParam
+    {
+        Int8? mIntraSearch;
+    }
+    
+    class CTDSLAC : CRadioMeasParam
+    {
+        UInt16? mLAC;
+    }
+    
+    class CTDSMCC : CRadioMeasParam
+    {
+        UInt16? mMCC;
+    }
+    
+    class CTDSMNC : CRadioMeasParam
+    {
+        UInt16? mMNC;
+    }
+    
+    class CTDSNMO : CRadioMeasParam
+    {
+        UInt32? mNMO;
+    }
+    
+    class CTDSQHyst : CRadioMeasParam
+    {
+        UInt16? mQHyst;
+    }
+    
+    class CTDSTreselection : CRadioMeasParam
+    {
+        UInt8? mTreselection;
+    }
+    
+    class CTDSQRxLevelMin : CRadioMeasParam
+    {
+        Int8? mQRxLevelMin;
+    }
+    
+    class CTDSQ_Offset : CRadioMeasParam
+    {
+        UInt8? mQ_Offset;
+    }
+    
+    class CTDSUEMaxAllowedULTxPower : CRadioMeasParam
+    {
+        UInt32? mUEMaxAllowedULTxPower;
+    }
+    
+    class CTDSUARFCN : CRadioMeasParam
+    {
+        UInt16? mUARFCN;
+    }
+    
+    class CTDSURAID : CRadioMeasParam
+    {
+        UInt16? mURAID;
+    }
+    
+    class CTDSDRX_Coefficient : CRadioMeasParam
+    {
+        UInt8? mDRX_Coefficient;
+    }
+    
+    class CTDSAttach_Indicator : CRadioMeasParam
+    {
+        UInt8? mAttach_Indicator;
+    }
+    
+    class CTDST3212_TD : CRadioMeasParam
+    {
+        UInt8? mT3212_TD;
+    }
+    
+    class CTDSHCS_Indicator : CRadioMeasParam
+    {
+        UInt8? mHCS_Indicator;
+    }
+    
+    class CTDSHCS_Priority : CRadioMeasParam
+    {
+        UInt8? mHCS_Priority;
+    }
+    
+    class CTDSServURAIDCount : CRadioMeasParam
+    {
+        UInt32? mServURAIDCount;
+    }
+    
+    class CTDSS_search_RAT : CRadioMeasParam
+    {
+        UInt8? mS_search_RAT;
+    }
+    
+    class CTDSDPCH_SIR : CRadioMeasParam
+    {
+        Double? mDPCH_SIR;
+    }
+    
+    class CTDSDPCH_SIR_Target : CRadioMeasParam
+    {
+        Double? mDPCH_SIR_Target;
+    }
+    
+    class CTDSTPCStep : CRadioMeasParam
+    {
+        UInt8? mTPCStep;
+    }
+    
+    class CTDSRbRates : CRadioMeasParam
+    {
+        List<CTDSRbRate> mRbRates;
+    }
+    
+    class CTDSDCHURAFCN : CRadioMeasParam
+    {
+        UInt16? mDCHURAFCN;
+    }
+    
+    class CTDSTsInfos : CRadioMeasParam
+    {
+        List<CTDSDL_DPCH_Ts_Info> mTsInfos;
+    }
+    
+    class CTDSCurrent_PICH_SFN : CRadioMeasParam
+    {
+        UInt16? mCurrent_PICH_SFN;
+    }
+    
+    class CTDSPI_Bit_Length : CRadioMeasParam
+    {
+        UInt8? mPI_Bit_Length;
+    }
+    
+    class CTDSPRACH_TX_Power : CRadioMeasParam
+    {
+        Double? mPRACH_TX_Power;
+    }
+    
+    class CTDSPRACH_Rhychn_ID : CRadioMeasParam
+    {
+        UInt8? mPRACH_Rhychn_ID;
+    }
+    
+    class CTDSPRACH_Sub_SFN : CRadioMeasParam
+    {
+        UInt16? mPRACH_Sub_SFN;
+    }
+    
+    class CTDSPRACH_SF : CRadioMeasParam
+    {
+        UInt8? mPRACH_SF;
+    }
+    
+    class CTDSPRACH_TSN : CRadioMeasParam
+    {
+        UInt8? mPRACH_TSN;
+    }
+    
+    class CTDSPRACH_TTI : CRadioMeasParam
+    {
+        UInt8? mPRACH_TTI;
+    }
+    
+    class CTDSPRACH_Timeslot : CRadioMeasParam
+    {
+        UInt8? mPRACH_Timeslot;
+    }
+    
+    class CTDSHSDPA_Indicator : CRadioMeasParam
+    {
+        UInt8? mHSDPA_Indicator;
+    }
+    
+    class CTDSDL_RLC_Thr : CRadioMeasParam
+    {
+        Double? mDL_RLC_Thr;
+    }
+    
+    class CTDSDL_PDCP_Thr : CRadioMeasParam
+    {
+        Double? mDL_PDCP_Thr;
+    }
+    
+    class CTDSDL_RLC_ErrorRate : CRadioMeasParam
+    {
+        Double? mDL_RLC_ErrorRate;
+    }
+    
+    class CTDSUL_RLC_Thr : CRadioMeasParam
+    {
+        Double? mUL_RLC_Thr;
+    }
+    
+    class CTDSUL_PDCP_Thr : CRadioMeasParam
+    {
+        Double? mUL_PDCP_Thr;
+    }
+    
+    class CTDSUL_RLC_RTXRate : CRadioMeasParam
+    {
+        Double? mUL_RLC_RTXRate;
+    }
+    
+    class CTDSRLC_Received_Bytes : CRadioMeasParam
+    {
+        UInt32? mRLC_Received_Bytes;
+    }
+    
+    class CTDSRLC_Send_Bytes : CRadioMeasParam
+    {
+        UInt32? mRLC_Send_Bytes;
+    }
+    
+    class CTDSTMSI : CRadioMeasParam
+    {
+        Int32? mTMSI;
+    }
+    
+    class CTDSHS_SCCH_SIR : CRadioMeasParam
+    {
+        Double? mHS_SCCH_SIR;
+    }
+    
+    class CTDSHS_A_DPCH_RSCP : CRadioMeasParam
+    {
+        Double? mHS_A_DPCH_RSCP;
+    }
+    
+    class CTDSHS_A_DPCH_C_I : CRadioMeasParam
+    {
+        Double? mHS_A_DPCH_C_I;
+    }
+    
+    class CTDSHS_SCCH_Scheduled_Count : CRadioMeasParam
+    {
+        UInt32? mHS_SCCH_Scheduled_Count;
+    }
+    
+    class CTDSHS_SCCH_Scheduled_Ratio : CRadioMeasParam
+    {
+        Double? mHS_SCCH_Scheduled_Ratio;
+    }
+    
+    class CTDSHS_SCCH_DecodeSuccRatio : CRadioMeasParam
+    {
+        Double? mHS_SCCH_DecodeSuccRatio;
+    }
+    
+    class CTDSHS_SCCH_BLER : CRadioMeasParam
+    {
+        Double? mHS_SCCH_BLER;
+    }
+    
+    class CTDS16QAM_Ratio : CRadioMeasParam
+    {
+        Double? m16QAM_Ratio;
+    }
+    
+    class CTDSQPSK_Ratio : CRadioMeasParam
+    {
+        Double? mQPSK_Ratio;
+    }
+    
+    class CTDSHS_PDSCH_TimeSlotUsed : CRadioMeasParam
+    {
+        UInt8? mHS_PDSCH_TimeSlotUsed;
+    }
+    
+    class CTDSHSDPA_CQI : CRadioMeasParam
+    {
+        UInt8? mHSDPA_CQI;
+    }
+    
+    class CTDSMax_HSDPA_CQI : CRadioMeasParam
+    {
+        UInt8? mMax_HSDPA_CQI;
+    }
+    
+    class CTDSMean_HSDPA_CQI : CRadioMeasParam
+    {
+        UInt8? mMean_HSDPA_CQI;
+    }
+    
+    class CTDSMin_HSDPA_CQI : CRadioMeasParam
+    {
+        UInt8? mMin_HSDPA_CQI;
+    }
+    
+    class CTDSHS_PDSCH_TotalBLER : CRadioMeasParam
+    {
+        Double? mHS_PDSCH_TotalBLER;
+    }
+    
+    class CTDSHS_PDSCH_Error_Blocks : CRadioMeasParam
+    {
+        UInt32? mHS_PDSCH_Error_Blocks;
+    }
+    
+    class CTDSHS_OneTime_RTX_Ratio : CRadioMeasParam
+    {
+        Double? mHS_OneTime_RTX_Ratio;
+    }
+    
+    class CTDSHS_DSCH_Error_Ratio : CRadioMeasParam
+    {
+        Double? mHS_DSCH_Error_Ratio;
+    }
+    
+    class CTDSHS_DSCH_Error_Blocks : CRadioMeasParam
+    {
+        UInt32? mHS_DSCH_Error_Blocks;
+    }
+    
+    class CTDSHS_PDSCP_CRC_Total : CRadioMeasParam
+    {
+        UInt32? mHS_PDSCP_CRC_Total;
+    }
+    
+    class CTDSNo_MAC_hs_PDU_received : CRadioMeasParam
+    {
+        UInt32? mNo_MAC_hs_PDU_received;
+    }
+    
+    class CTDSBLER_of_MAC_hs_PDUs : CRadioMeasParam
+    {
+        Double? mBLER_of_MAC_hs_PDUs;
+    }
+    
+    class CTDSHARQ_Process_ID : CRadioMeasParam
+    {
+        UInt8? mHARQ_Process_ID;
+    }
+    
+    class CTDSIR_Version_Number : CRadioMeasParam
+    {
+        UInt8? mIR_Version_Number;
+    }
+    
+    class CTDSNew_Data_Indicator : CRadioMeasParam
+    {
+        UInt8? mNew_Data_Indicator;
+    }
+    
+    class CTDSCQI_Indicator : CRadioMeasParam
+    {
+        UInt8? mCQI_Indicator;
+    }
+    
+    class CTDSHS_SCCH_Uarfn : CRadioMeasParam
+    {
+        UInt16? mHS_SCCH_Uarfn;
+    }
+    
+    class CTDSHSDPA_Schedule_Start_Code : CRadioMeasParam
+    {
+        UInt8? mHSDPA_Schedule_Start_Code;
+    }
+    
+    class CTDSHSDPA_Schedule_End_Code : CRadioMeasParam
+    {
+        UInt8? mHSDPA_Schedule_End_Code;
+    }
+    
+    class CTDSHSDPA_Schedule_Modulation_Mode : CRadioMeasParam
+    {
+        UInt8? mHSDPA_Schedule_Modulation_Mode;
+    }
+    
+    class CTDSPDSCH_CRC_Error : CRadioMeasParam
+    {
+        UInt32? mPDSCH_CRC_Error;
+    }
+    
+    class CTDSRRC_Connection_Request_Cause : CRadioMeasParam
+    {
+        UInt8? mRRC_Connection_Request_Cause;
+    }
+    
+    class CTDSRRC_Connection_Release_DL_DCCH_Cause : CRadioMeasParam
+    {
+        UInt8? mRRC_Connection_Release_DL_DCCH_Cause;
+    }
+    
+    class CTDSRNCID : CRadioMeasParam
+    {
+        UInt16? mRNCID;
+    }
+    
+    class CTDSUpPCHTxPower : CRadioMeasParam
+    {
+        Double? mUpPCHTxPower;
+    }
+}

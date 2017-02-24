@@ -1,0 +1,9 @@
+#include "Models/SignallingParam.idl"
+
+namespace IPC
+{
+    singleton interface SignallingDetail
+    {
+        String GetXmlString(Models.CSignallingParam signallingParam);
+    }
+}
